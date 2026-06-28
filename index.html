@@ -17,6 +17,7 @@
     content="Cuidado, beleza e renovação para os seus cabelos."
   />
   <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/arte-porta-um-novo-tempo.webp" />
 
   <link rel="stylesheet" href="styles.css" />
 
@@ -26,13 +27,14 @@
     "@type": "BeautySalon",
     "name": "Um Novo Tempo",
     "description": "Salão especializado em cuidados, transformação e saúde capilar.",
-    "telephone": "+55 75 99163-3332",
+    "telephone": "+55 75 99263-3332",
     "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Rua Amanhecer, 213 – Conceição, CEP 44066-152",
+      "streetAddress": "R. Amanhecer, 213 - Conceição",
       "addressLocality": "Feira de Santana",
       "addressRegion": "BA",
+      "postalCode": "44066-152",
       "addressCountry": "BR"
     },
     "openingHoursSpecification": [
@@ -59,12 +61,8 @@
   <header class="site-header" id="inicio">
     <div class="container header-inner">
       <a class="brand" href="#inicio" aria-label="Um Novo Tempo - início">
-        <span class="brand-mark" aria-hidden="true">
-          <svg viewBox="0 0 64 64" role="img">
-            <path d="M32 5c8 8 13 14 13 23 0 9-6 16-13 16s-13-7-13-16C19 19 24 13 32 5Z"/>
-            <path d="M16 28c-6 3-10 8-10 14 0 9 8 17 19 17 4 0 7-1 10-3"/>
-            <path d="M48 28c6 3 10 8 10 14 0 9-8 17-19 17-4 0-7-1-10-3"/>
-          </svg>
+        <span class="brand-mark brand-mark-image" aria-hidden="true">
+          <img class="brand-logo" src="assets/logo-um-novo-tempo.webp" alt="" width="340" height="290" />
         </span>
         <span>
           <strong>Um Novo Tempo</strong>
@@ -93,12 +91,37 @@
     <section class="hero section">
       <div class="container hero-grid">
         <div class="hero-copy reveal">
-          <span class="eyebrow">Beleza • Cuidado • Renovação</span>
-          <h1>Seu cabelo merece viver <em>um novo tempo.</em></h1>
-          <p class="hero-text">
-            Tratamentos personalizados para realçar sua beleza, recuperar a saúde dos fios
-            e transformar seu momento de cuidado em uma experiência especial.
+          <div class="hero-brand-lockup">
+            <img
+              class="hero-logo"
+              src="assets/logo-um-novo-tempo.webp"
+              alt="Logo do Salão Um Novo Tempo"
+              width="340"
+              height="290"
+              decoding="async"
+            />
+            <span class="eyebrow eyebrow-door">Salão de Beleza</span>
+          </div>
+
+          <h1 class="hero-door-title">
+            <span>Um</span>
+            <span>Novo</span>
+            <span>Tempo</span>
+          </h1>
+
+          <p class="hero-text hero-text-door">
+            Beleza, cuidado e renovação em um ambiente acolhedor, com atendimento
+            personalizado e tratamentos pensados para valorizar sua identidade.
           </p>
+
+          <div class="hero-contact-pills">
+            <a class="contact-pill" href="https://wa.me/5575992633332?text=Olá!%20Gostaria%20de%20agendar%20um%20horário%20no%20Salão%20Um%20Novo%20Tempo." target="_blank" rel="noopener noreferrer">
+              WhatsApp: +55 75 99263-3332
+            </a>
+            <span class="contact-pill">Rua Amanhecer, 213 - Conceição, Feira de Santana - BA</span>
+          </div>
+
+          <p class="hero-quote">“Tudo fez formoso em seu tempo.” <strong>Eclesiastes 3:11</strong></p>
 
           <div class="hero-actions">
             <a class="button" href="#agendamento">Agendar atendimento</a>
@@ -112,42 +135,22 @@
           </ul>
         </div>
 
-        <div class="hero-visual reveal" aria-label="Ilustração de cuidado capilar">
-          <div class="visual-card">
+        <div class="hero-visual reveal" aria-label="Arte principal da porta do Salão Um Novo Tempo">
+          <div class="visual-card visual-card-poster">
             <div class="visual-top">
-              <span>Um momento só seu</span>
+              <span>Identidade visual do salão</span>
               <span class="spark">✦</span>
             </div>
 
-            <svg class="hair-illustration" viewBox="0 0 520 560" role="img" aria-label="Ilustração abstrata de cabelo">
-              <defs>
-                <linearGradient id="hairGradient" x1="0" y1="0" x2="1" y2="1">
-                  <stop offset="0" stop-color="#f0c7b6"/>
-                  <stop offset="0.55" stop-color="#b06a7c"/>
-                  <stop offset="1" stop-color="#5f3348"/>
-                </linearGradient>
-                <linearGradient id="faceGradient" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0" stop-color="#f8d8c8"/>
-                  <stop offset="1" stop-color="#d99d88"/>
-                </linearGradient>
-              </defs>
-              <path fill="url(#hairGradient)" d="M127 84c74-76 203-73 270 7 46 55 54 144 23 215-21 49-55 89-88 130-21 26-39 53-48 87-13-30-17-61-12-94 6-39 24-74 45-107 23-37 45-77 46-121 1-49-27-98-73-119-48-22-108-9-144 30-30 32-41 75-36 117 6 52 35 97 54 145 16 42 23 88 8 131-22-38-54-71-78-108-28-44-45-94-46-146-2-64 24-127 79-167Z"/>
-              <ellipse cx="259" cy="239" rx="94" ry="122" fill="url(#faceGradient)"/>
-              <path d="M190 213c22-11 44-11 66 0M276 213c20-11 41-11 62 0" fill="none" stroke="#6f3c55" stroke-width="7" stroke-linecap="round"/>
-              <path d="M238 307c14 9 31 9 45 0" fill="none" stroke="#9b5367" stroke-width="7" stroke-linecap="round"/>
-              <path d="M168 176c20-72 125-109 192-44 31 30 42 71 39 114-18-33-34-64-66-82-49-29-112-19-165 12Z" fill="#6f3c55"/>
-              <path d="M168 176c-22 94 14 192 84 246-59-16-112-72-125-136-10-50 3-89 41-110Z" fill="#8f536a"/>
-              <path d="M399 211c16 103-26 190-102 239 47-7 101-45 123-92 26-56 22-109-21-147Z" fill="#5c3146"/>
-            </svg>
-
-            <div class="floating-badge badge-one">
-              <strong>+ saúde</strong>
-              <span>para os fios</span>
-            </div>
-            <div class="floating-badge badge-two">
-              <strong>+ brilho</strong>
-              <span>e autoestima</span>
-            </div>
+            <img
+              class="salon-poster"
+              src="assets/arte-porta-um-novo-tempo.webp"
+              alt="Arte principal da porta do Salão Um Novo Tempo com logo e profissionais"
+              width="1148"
+              height="1371"
+              fetchpriority="high"
+              decoding="async"
+            />
           </div>
         </div>
       </div>
@@ -477,7 +480,7 @@
 
             <label>
               Telefone
-              <input type="tel" id="telefone" name="telefone" autocomplete="tel" required placeholder="(75) 99163-3332" />
+              <input type="tel" id="telefone" name="telefone" autocomplete="tel" required placeholder="(75) 99263-3332" />
             </label>
           </div>
 
@@ -505,7 +508,6 @@
                 <option value="">Escolha um período</option>
                 <option>Manhã</option>
                 <option>Tarde</option>
-                <option>Noite</option>
                 <option>Primeiro horário disponível</option>
               </select>
             </label>
@@ -598,18 +600,17 @@
         <div>
           <span class="eyebrow">Contato</span>
           <h2>Estamos esperando por você.</h2>
-          <p>Atualize os dados abaixo com as informações reais do salão.</p>
+          <p>Entre em contato para tirar dúvidas, solicitar uma avaliação ou reservar seu horário.</p>
         </div>
 
         <div class="contact-items">
-          <a href="tel:+5575991633332">
+          <a href="tel:+5575992633332">
             <span>Telefone / WhatsApp</span>
-            <strong>(75) 99163-3332</strong>
+            <strong>+55 75 99263-3332</strong>
           </a>
           <div>
             <span>Endereço</span>
-            <strong>Rua Amanhecer, 213 – Conceição, Feira de Santana – BA, CEP 44066-152, Brasil.
-</strong>
+            <strong>R. Amanhecer, 213 - Conceição, Feira de Santana - BA, 44066-152, Brasil</strong>
           </div>
           <div>
             <span>Horário</span>
@@ -668,12 +669,13 @@
 
     <div class="container footer-bottom">
       <span>© <span id="current-year"></span> Um Novo Tempo. Todos os direitos reservados.</span>
+      <span>Atendimento em Feira de Santana - BA.</span>
     </div>
   </footer>
 
   <a
     class="whatsapp-float"
-    href="https://wa.me/5575991633332?text=Olá!%20Gostaria%20de%20agendar%20um%20horário%20no%20salão%20Um%20Novo%20Tempo."
+    href="https://wa.me/5575992633332?text=Olá!%20Gostaria%20de%20agendar%20um%20horário%20no%20salão%20Um%20Novo%20Tempo."
     target="_blank"
     rel="noopener noreferrer"
     aria-label="Falar com o salão pelo WhatsApp"

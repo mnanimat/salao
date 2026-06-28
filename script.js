@@ -1,4 +1,4 @@
-const WHATSAPP_NUMBER = "5575991633332";
+const WHATSAPP_NUMBER = "557591633332";
 
 const header = document.querySelector(".site-header");
 const menuButton = document.querySelector(".menu-button");

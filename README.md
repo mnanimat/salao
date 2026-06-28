@@ -1,63 +1,64 @@
-# Site Um Novo Tempo
+# Site Um Novo Tempo — versão Cloudflare Pages
 
-Site institucional responsivo para salão de beleza, com:
+Este projeto é um site estático em HTML, CSS e JavaScript. Ele **não usa Next.js**.
 
-- Página inicial elegante e animada
-- Seção sobre o salão
-- Catálogo com 9 serviços
-- Explicação do processo de atendimento
-- Formulário que monta uma mensagem e abre o WhatsApp
-- Perguntas frequentes
-- Dados de contato
-- Política de privacidade e termos de atendimento
-- SEO básico e dados estruturados
-- Layout adaptado para celular, tablet e computador
+## Arquivos principais
 
-## Como visualizar
+- `index.html`
+- `styles.css`
+- `script.js`
+- `package.json`
+- `build.mjs`
+- `_headers`
 
-Abra o arquivo `index.html` no navegador.
+## Configuração correta no Cloudflare Pages
 
-## O que editar antes de publicar
+Abra o projeto na Cloudflare e acesse:
 
-### 1. Número do WhatsApp
+`Settings` → `Build` → `Build configuration`
 
-No arquivo `script.js`, altere:
+Use exatamente:
 
-```js
-const WHATSAPP_NUMBER = "5575999999999";
-```
+- **Framework preset:** `None`
+- **Build command:** `npm run build`
+- **Build output directory:** `dist`
+- **Root directory:** deixe vazio
+- **Node.js:** versão padrão da Cloudflare é suficiente
 
-Use o formato: código do país + DDD + número, sem espaços ou símbolos.
-
-Também altere o número em `index.html`, procurando por:
+Apague o comando incorreto:
 
 ```text
-5575999999999
-(75) 99999-9999
+npx @cloudflare/next-on-pages@1
 ```
 
-### 2. Endereço, Instagram e horários
+Depois salve e selecione **Retry deployment** ou faça um novo commit no GitHub.
 
-No final do arquivo `index.html`, procure pela seção `Contato` e substitua:
+## Por que o erro aconteceu?
 
-- `Informe o endereço do salão`
-- `@umnovotempo.salao`
-- Horários de atendimento
+O comando `@cloudflare/next-on-pages` serve para projetos Next.js. Este repositório contém somente HTML, CSS e JavaScript e, portanto, não possui o pacote `next`.
 
-### 3. Preços
+## Teste local opcional
 
-O site informa “orçamento após avaliação”. Caso queira exibir preços, adicione um texto dentro de cada cartão de serviço.
+Com Node.js instalado:
 
-### 4. Publicação
+```bash
+npm run check
+npm run build
+```
 
-Pode ser publicado gratuitamente em:
+O conteúdo pronto para publicação será criado na pasta `dist`.
 
-- GitHub Pages
-- Vercel
-- Netlify
+## Dados configurados
 
-Na Vercel, basta importar a pasta do projeto ou enviar os arquivos para um repositório do GitHub.
+- WhatsApp: `+55 75 99263-3332`
+- Link interno do WhatsApp: `5575992633332`
+- Endereço: `R. Amanhecer, 213 - Conceição, Feira de Santana - BA, 44066-152, Brasil`
 
-## Observação importante
+## Foto principal
 
-Os textos de política de privacidade e termos são modelos básicos. Ajuste-os à operação real do salão, principalmente regras de cancelamento, atrasos, sinal, uso de imagem e tratamento de dados.
+A foto exibida no destaque inicial está em `assets/profissional-um-novo-tempo.webp`.
+
+## Identidade visual atualizada
+
+- Logo do salão usada no topo e na seção inicial: `assets/logo-um-novo-tempo.webp`
+- Arte da porta usada no destaque principal do site: `assets/arte-porta-um-novo-tempo.webp`
