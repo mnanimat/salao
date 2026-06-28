@@ -1,10 +1,11 @@
-const WHATSAPP_NUMBER = "557591633332";
+const WHATSAPP_NUMBER = "5575992633332";
 
 const header = document.querySelector(".site-header");
 const menuButton = document.querySelector(".menu-button");
 const mainNav = document.querySelector(".main-nav");
 const bookingForm = document.querySelector("#booking-form");
 const serviceSelect = document.querySelector("#servico");
+const appointmentDateInput = document.querySelector("#data-agendamento");
 const feedback = document.querySelector("#form-feedback");
 
 function updateHeader() {
@@ -39,20 +40,44 @@ function sanitizeLine(value) {
   return value.replace(/\s+/g, " ").trim();
 }
 
+function getLocalISODate(date = new Date()) {
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, "0");
+  const day = String(date.getDate()).padStart(2, "0");
+
+  return `${year}-${month}-${day}`;
+}
+
+function formatDateBR(value) {
+  const [year, month, day] = value.split("-");
+  return `${day}/${month}/${year}`;
+}
+
+appointmentDateInput.min = getLocalISODate();
+
 bookingForm.addEventListener("submit", (event) => {
   event.preventDefault();
 
   const nome = sanitizeLine(document.querySelector("#nome").value);
   const telefone = sanitizeLine(document.querySelector("#telefone").value);
   const servico = sanitizeLine(document.querySelector("#servico").value);
+  const dataAgendamento = sanitizeLine(appointmentDateInput.value);
   const periodo = sanitizeLine(document.querySelector("#periodo").value);
   const observacoes = sanitizeLine(document.querySelector("#observacoes").value);
   const consentimento = document.querySelector("#consentimento").checked;
 
-  if (!nome || !telefone || !servico || !periodo || !consentimento) {
-    feedback.textContent = "Preencha os campos obrigatórios e marque a autorização de contato.";
+  if (!nome || !telefone || !servico || !dataAgendamento || !periodo || !consentimento) {
+    feedback.textContent = "Preencha os campos obrigatórios, escolha uma data e marque a autorização de contato.";
     return;
   }
+
+  if (dataAgendamento < getLocalISODate()) {
+    feedback.textContent = "Escolha uma data de hoje em diante.";
+    appointmentDateInput.focus();
+    return;
+  }
+
+  const dataFormatada = formatDateBR(dataAgendamento);
 
   const mensagem = [
     "Olá! Gostaria de solicitar um agendamento no salão Um Novo Tempo.",
@@ -60,6 +85,7 @@ bookingForm.addEventListener("submit", (event) => {
     `Nome: ${nome}`,
     `Telefone: ${telefone}`,
     `Serviço: ${servico}`,
+    `Data desejada: ${dataFormatada}`,
     `Melhor período: ${periodo}`,
     observacoes ? `Observações: ${observacoes}` : "",
     "",

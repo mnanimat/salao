@@ -503,15 +503,25 @@
             </label>
 
             <label>
-              Melhor período
-              <select id="periodo" name="periodo" required>
-                <option value="">Escolha um período</option>
-                <option>Manhã</option>
-                <option>Tarde</option>
-                <option>Primeiro horário disponível</option>
-              </select>
+              Data desejada
+              <input
+                type="date"
+                id="data-agendamento"
+                name="data-agendamento"
+                required
+              />
             </label>
           </div>
+
+          <label>
+            Melhor período
+            <select id="periodo" name="periodo" required>
+              <option value="">Escolha um período</option>
+              <option>Manhã</option>
+              <option>Tarde</option>
+              <option>Primeiro horário disponível</option>
+            </select>
+          </label>
 
           <label>
             Observações
