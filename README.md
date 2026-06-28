@@ -50,8 +50,8 @@ O conteúdo pronto para publicação será criado na pasta `dist`.
 
 ## Dados configurados
 
-- WhatsApp: `+55 75 99263-3332`
-- Link interno do WhatsApp: `5575992633332`
+- WhatsApp: `+55 75 99163-3332`
+- Link interno do WhatsApp: `5575991633332`
 - Endereço: `R. Amanhecer, 213 - Conceição, Feira de Santana - BA, 44066-152, Brasil`
 
 ## Foto principal
