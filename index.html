@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Um Novo Tempo | Salão de Beleza</title>
+  <meta
+    name="description"
+    content="Um Novo Tempo: escova, corte, lavagem, cauterização capilar, reconstrução, relaxamento, gradativa e botox capilar."
+  />
+  <meta name="theme-color" content="#6f3c55" />
+
+  <meta property="og:title" content="Um Novo Tempo | Salão de Beleza" />
+  <meta
+    property="og:description"
+    content="Cuidado, beleza e renovação para os seus cabelos."
+  />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BeautySalon",
+    "name": "Um Novo Tempo",
+    "description": "Salão especializado em cuidados, transformação e saúde capilar.",
+    "telephone": "+55 75 99999-9999",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Informe o endereço do salão",
+      "addressLocality": "Informe a cidade",
+      "addressRegion": "BA",
+      "addressCountry": "BR"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "18:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "08:00",
+        "closes": "17:00"
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header" id="inicio">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="Um Novo Tempo - início">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64" role="img">
+            <path d="M32 5c8 8 13 14 13 23 0 9-6 16-13 16s-13-7-13-16C19 19 24 13 32 5Z"/>
+            <path d="M16 28c-6 3-10 8-10 14 0 9 8 17 19 17 4 0 7-1 10-3"/>
+            <path d="M48 28c6 3 10 8 10 14 0 9-8 17-19 17-4 0-7-1-10-3"/>
+          </svg>
+        </span>
+        <span>
+          <strong>Um Novo Tempo</strong>
+          <small>Salão de Beleza</small>
+        </span>
+      </a>
+
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="menu-principal">
+        <span></span><span></span><span></span>
+        <span class="sr-only">Abrir menu</span>
+      </button>
+
+      <nav class="main-nav" id="menu-principal" aria-label="Navegação principal">
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#experiencia">Experiência</a>
+        <a href="#agendamento">Agendamento</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <a class="button button-small header-cta" href="#agendamento">Agendar horário</a>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">Beleza • Cuidado • Renovação</span>
+          <h1>Seu cabelo merece viver <em>um novo tempo.</em></h1>
+          <p class="hero-text">
+            Tratamentos personalizados para realçar sua beleza, recuperar a saúde dos fios
+            e transformar seu momento de cuidado em uma experiência especial.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button" href="#agendamento">Agendar atendimento</a>
+            <a class="button button-ghost" href="#servicos">Conhecer serviços</a>
+          </div>
+
+          <ul class="trust-list" aria-label="Diferenciais do salão">
+            <li>Atendimento personalizado</li>
+            <li>Produtos profissionais</li>
+            <li>Ambiente acolhedor</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual reveal" aria-label="Ilustração de cuidado capilar">
+          <div class="visual-card">
+            <div class="visual-top">
+              <span>Um momento só seu</span>
+              <span class="spark">✦</span>
+            </div>
+
+            <svg class="hair-illustration" viewBox="0 0 520 560" role="img" aria-label="Ilustração abstrata de cabelo">
+              <defs>
+                <linearGradient id="hairGradient" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#f0c7b6"/>
+                  <stop offset="0.55" stop-color="#b06a7c"/>
+                  <stop offset="1" stop-color="#5f3348"/>
+                </linearGradient>
+                <linearGradient id="faceGradient" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#f8d8c8"/>
+                  <stop offset="1" stop-color="#d99d88"/>
+                </linearGradient>
+              </defs>
+              <path fill="url(#hairGradient)" d="M127 84c74-76 203-73 270 7 46 55 54 144 23 215-21 49-55 89-88 130-21 26-39 53-48 87-13-30-17-61-12-94 6-39 24-74 45-107 23-37 45-77 46-121 1-49-27-98-73-119-48-22-108-9-144 30-30 32-41 75-36 117 6 52 35 97 54 145 16 42 23 88 8 131-22-38-54-71-78-108-28-44-45-94-46-146-2-64 24-127 79-167Z"/>
+              <ellipse cx="259" cy="239" rx="94" ry="122" fill="url(#faceGradient)"/>
+              <path d="M190 213c22-11 44-11 66 0M276 213c20-11 41-11 62 0" fill="none" stroke="#6f3c55" stroke-width="7" stroke-linecap="round"/>
+              <path d="M238 307c14 9 31 9 45 0" fill="none" stroke="#9b5367" stroke-width="7" stroke-linecap="round"/>
+              <path d="M168 176c20-72 125-109 192-44 31 30 42 71 39 114-18-33-34-64-66-82-49-29-112-19-165 12Z" fill="#6f3c55"/>
+              <path d="M168 176c-22 94 14 192 84 246-59-16-112-72-125-136-10-50 3-89 41-110Z" fill="#8f536a"/>
+              <path d="M399 211c16 103-26 190-102 239 47-7 101-45 123-92 26-56 22-109-21-147Z" fill="#5c3146"/>
+            </svg>
+
+            <div class="floating-badge badge-one">
+              <strong>+ saúde</strong>
+              <span>para os fios</span>
+            </div>
+            <div class="floating-badge badge-two">
+              <strong>+ brilho</strong>
+              <span>e autoestima</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-marquee" aria-hidden="true">
+        <div>
+          <span>Escova</span><i>✦</i>
+          <span>Corte</span><i>✦</i>
+          <span>Reconstrução</span><i>✦</i>
+          <span>Botox Capilar</span><i>✦</i>
+          <span>Relaxamento</span><i>✦</i>
+          <span>Cauterização</span><i>✦</i>
+          <span>Gradativa</span><i>✦</i>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="sobre">
+      <div class="container about-grid">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Sobre o salão</span>
+          <h2>Cuidado profissional em cada etapa.</h2>
+        </div>
+
+        <div class="about-content reveal">
+          <p>
+            No <strong>Um Novo Tempo</strong>, cada atendimento começa com uma escuta cuidadosa.
+            Avaliamos as necessidades do seu cabelo, entendemos o resultado que você deseja e
+            indicamos o procedimento mais adequado para os seus fios.
+          </p>
+          <p>
+            Nosso propósito é unir beleza, saúde capilar e bem-estar, respeitando a estrutura
+            do cabelo e valorizando a sua identidade.
+          </p>
+
+          <div class="about-highlights">
+            <article>
+              <strong>01</strong>
+              <span>Diagnóstico antes do procedimento</span>
+            </article>
+            <article>
+              <strong>02</strong>
+              <span>Orientação de cuidados em casa</span>
+            </article>
+            <article>
+              <strong>03</strong>
+              <span>Atendimento com hora marcada</span>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services-section" id="servicos">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <span class="eyebrow">Nossos serviços</span>
+          <h2>Tratamentos para cuidar, renovar e transformar.</h2>
+          <p>
+            Os valores podem variar conforme comprimento, volume, estado dos fios e quantidade
+            de produto utilizada. Faça uma avaliação para receber seu orçamento.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card featured reveal">
+            <div class="service-icon" aria-hidden="true">01</div>
+            <div>
+              <span class="service-tag">Finalização</span>
+              <h3>Escova</h3>
+              <p>
+                Modelagem para alinhar os fios, reduzir o frizz e proporcionar brilho,
+                movimento e acabamento impecável.
+              </p>
+            </div>
+            <button class="service-select" data-service="Escova" type="button">
+              Agendar este serviço <span>→</span>
+            </button>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">02</div>
+            <div>
+              <span class="service-tag">Design</span>
+              <h3>Corte</h3>
+              <p>
+                Corte personalizado de acordo com seu estilo, formato do rosto, textura
+                e rotina de cuidados.
+              </p>
+            </div>
+            <button class="service-select" data-service="Corte" type="button">
+              Agendar este serviço <span>→</span>
+            </button>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">03</div>
+            <div>
+              <span class="service-tag">Higienização</span>
+              <h3>Lavagem</h3>
+              <p>
+                Limpeza cuidadosa do couro cabeludo e dos fios, com produtos adequados
+                à necessidade capilar.
+              </p>
+            </div>
+            <button class="service-select" data-service="Lavagem" type="button">
+              Agendar este serviço <span>→</span>
+            </button>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">04</div>
+            <div>
+              <span class="service-tag">Tratamento</span>
+              <h3>Cauterização capilar</h3>
+              <p>
+                Reposição de queratina e nutrientes para fios fragilizados, porosos,
+                quebradiços ou danificados por química e calor.
+              </p>
+            </div>
+            <button class="service-select" data-service="Cauterização capilar" type="button">
+              Agendar este serviço <span>→</span>
+            </button>
+          </article>
+
+          <article class="service-card featured reveal">
+            <div class="service-icon" aria-hidden="true">05</div>
+            <div>
+              <span class="service-tag">Recuperação</span>
+              <h3>Reconstrução capilar</h3>
+              <p>
+                Tratamento intensivo para fortalecer a fibra, melhorar a resistência e
+                devolver massa aos cabelos danificados.
+              </p>
+            </div>
+            <button class="service-select" data-service="Reconstrução capilar" type="button">
+              Agendar este serviço <span>→</span>
+            </button>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">06</div>
+            <div>
+              <span class="service-tag">Textura</span>
+              <h3>Relaxamento</h3>
+              <p>
+                Procedimento para reduzir volume e modificar a curvatura dos fios,
+                realizado após avaliação e teste de mecha.
+              </p>
+            </div>
+            <button class="service-select" data-service="Relaxamento" type="button">
+              Agendar este serviço <span>→</span>
+            </button>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">07</div>
+            <div>
+              <span class="service-tag">Aplicação completa</span>
+              <h3>Aplicação de relaxamento</h3>
+              <p>
+                Aplicação profissional do produto, com divisão correta das mechas,
+                controle do tempo de ação e cuidados de neutralização.
+              </p>
+            </div>
+            <button class="service-select" data-service="Aplicação de relaxamento" type="button">
+              Agendar este serviço <span>→</span>
+            </button>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">08</div>
+            <div>
+              <span class="service-tag">Alinhamento</span>
+              <h3>Escova gradativa</h3>
+              <p>
+                Tratamento de alinhamento gradual, indicado para controlar o volume,
+                diminuir o frizz e facilitar a rotina.
+              </p>
+            </div>
+            <button class="service-select" data-service="Escova gradativa" type="button">
+              Agendar este serviço <span>→</span>
+            </button>
+          </article>
+
+          <article class="service-card featured reveal">
+            <div class="service-icon" aria-hidden="true">09</div>
+            <div>
+              <span class="service-tag">Redução de frizz</span>
+              <h3>Botox capilar</h3>
+              <p>
+                Tratamento para preencher a fibra, melhorar a maciez, reduzir o frizz
+                e proporcionar aparência mais alinhada e saudável.
+              </p>
+            </div>
+            <button class="service-select" data-service="Botox capilar" type="button">
+              Agendar este serviço <span>→</span>
+            </button>
+          </article>
+        </div>
+
+        <div class="service-note reveal">
+          <span aria-hidden="true">!</span>
+          <p>
+            Procedimentos químicos dependem de avaliação profissional, histórico químico
+            e, quando necessário, teste de mecha. A saúde dos fios vem em primeiro lugar.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section experience" id="experiencia">
+      <div class="container experience-grid">
+        <div class="experience-visual reveal">
+          <div class="experience-card card-main">
+            <span class="mini-label">Experiência Um Novo Tempo</span>
+            <h3>Mais do que um procedimento: um momento de renovação.</h3>
+            <p>
+              Atendimento atento, ambiente confortável e indicação personalizada
+              para você sair se sentindo ainda mais confiante.
+            </p>
+          </div>
+          <div class="experience-card card-small">
+            <strong>Seu cabelo conta uma história.</strong>
+            <span>Nós ajudamos a cuidar do próximo capítulo.</span>
+          </div>
+        </div>
+
+        <div class="experience-list reveal">
+          <span class="eyebrow">Como funciona</span>
+          <h2>Um atendimento pensado para você.</h2>
+
+          <ol>
+            <li>
+              <span>01</span>
+              <div>
+                <h3>Conversa e avaliação</h3>
+                <p>Entendemos seu histórico capilar, rotina e objetivo.</p>
+              </div>
+            </li>
+            <li>
+              <span>02</span>
+              <div>
+                <h3>Indicação do serviço</h3>
+                <p>Explicamos o procedimento, cuidados e resultado esperado.</p>
+              </div>
+            </li>
+            <li>
+              <span>03</span>
+              <div>
+                <h3>Realização com cuidado</h3>
+                <p>Aplicação profissional, respeitando o tempo e a saúde dos fios.</p>
+              </div>
+            </li>
+            <li>
+              <span>04</span>
+              <div>
+                <h3>Orientação pós-atendimento</h3>
+                <p>Você recebe dicas para prolongar o resultado em casa.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="section benefits">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <span class="eyebrow">Por que escolher o salão</span>
+          <h2>Detalhes que fazem a diferença.</h2>
+        </div>
+
+        <div class="benefits-grid">
+          <article class="reveal">
+            <span>✦</span>
+            <h3>Atendimento individual</h3>
+            <p>Cada cabelo recebe uma recomendação compatível com sua necessidade.</p>
+          </article>
+          <article class="reveal">
+            <span>✦</span>
+            <h3>Cuidados profissionais</h3>
+            <p>Procedimentos realizados com atenção, técnica e produtos adequados.</p>
+          </article>
+          <article class="reveal">
+            <span>✦</span>
+            <h3>Resultado com responsabilidade</h3>
+            <p>A saúde dos fios é considerada antes de qualquer transformação química.</p>
+          </article>
+          <article class="reveal">
+            <span>✦</span>
+            <h3>Ambiente acolhedor</h3>
+            <p>Um espaço pensado para você desacelerar e aproveitar seu momento.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section booking" id="agendamento">
+      <div class="container booking-grid">
+        <div class="booking-copy reveal">
+          <span class="eyebrow">Agende seu horário</span>
+          <h2>Comece agora o seu novo tempo.</h2>
+          <p>
+            Preencha seus dados, escolha o serviço desejado e envie a solicitação
+            diretamente pelo WhatsApp.
+          </p>
+
+          <div class="booking-info">
+            <div>
+              <span>Atendimento</span>
+              <strong>Com hora marcada</strong>
+            </div>
+            <div>
+              <span>Orçamento</span>
+              <strong>Após avaliação</strong>
+            </div>
+          </div>
+        </div>
+
+        <form class="booking-form reveal" id="booking-form">
+          <div class="form-row">
+            <label>
+              Seu nome
+              <input type="text" id="nome" name="nome" autocomplete="name" required placeholder="Digite seu nome" />
+            </label>
+
+            <label>
+              Telefone
+              <input type="tel" id="telefone" name="telefone" autocomplete="tel" required placeholder="(75) 99999-9999" />
+            </label>
+          </div>
+
+          <div class="form-row">
+            <label>
+              Serviço
+              <select id="servico" name="servico" required>
+                <option value="">Selecione um serviço</option>
+                <option>Escova</option>
+                <option>Corte</option>
+                <option>Lavagem</option>
+                <option>Cauterização capilar</option>
+                <option>Reconstrução capilar</option>
+                <option>Relaxamento</option>
+                <option>Aplicação de relaxamento</option>
+                <option>Escova gradativa</option>
+                <option>Botox capilar</option>
+                <option>Avaliação capilar</option>
+              </select>
+            </label>
+
+            <label>
+              Melhor período
+              <select id="periodo" name="periodo" required>
+                <option value="">Escolha um período</option>
+                <option>Manhã</option>
+                <option>Tarde</option>
+                <option>Primeiro horário disponível</option>
+              </select>
+            </label>
+          </div>
+
+          <label>
+            Observações
+            <textarea
+              id="observacoes"
+              name="observacoes"
+              rows="4"
+              placeholder="Conte um pouco sobre seu cabelo, histórico químico ou resultado desejado."
+            ></textarea>
+          </label>
+
+          <label class="checkbox-label">
+            <input type="checkbox" id="consentimento" required />
+            <span>
+              Autorizo o uso dos dados informados apenas para contato e agendamento.
+            </span>
+          </label>
+
+          <button class="button button-full" type="submit">
+            Enviar solicitação pelo WhatsApp
+          </button>
+
+          <p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section faq-section">
+      <div class="container faq-grid">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Dúvidas frequentes</span>
+          <h2>Informações antes do atendimento.</h2>
+          <p>
+            Para dúvidas específicas sobre compatibilidade química, envie uma mensagem
+            com seu histórico capilar.
+          </p>
+        </div>
+
+        <div class="faq-list reveal">
+          <details>
+            <summary>Preciso fazer avaliação antes de um procedimento químico?</summary>
+            <p>
+              Sim. A avaliação ajuda a identificar o estado dos fios, o histórico químico
+              e a compatibilidade do procedimento. Em alguns casos, também é necessário
+              fazer teste de mecha.
+            </p>
+          </details>
+
+          <details>
+            <summary>Quanto tempo dura o atendimento?</summary>
+            <p>
+              O tempo varia conforme serviço, comprimento, volume e condição do cabelo.
+              A estimativa é informada no momento do agendamento ou da avaliação.
+            </p>
+          </details>
+
+          <details>
+            <summary>Como saber o valor do serviço?</summary>
+            <p>
+              O orçamento é personalizado, pois depende da quantidade de produto,
+              técnica utilizada e características dos fios.
+            </p>
+          </details>
+
+          <details>
+            <summary>Posso fazer botox ou gradativa em cabelo com outra química?</summary>
+            <p>
+              A possibilidade depende da composição dos produtos já utilizados e do estado
+              atual do cabelo. Informe todo o histórico químico para uma avaliação segura.
+            </p>
+          </details>
+
+          <details>
+            <summary>Como conservar o resultado em casa?</summary>
+            <p>
+              Após o atendimento, você recebe orientações de higienização, proteção térmica,
+              frequência de tratamento e produtos mais adequados para sua rotina.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contato">
+      <div class="container contact-card reveal">
+        <div>
+          <span class="eyebrow">Contato</span>
+          <h2>Estamos esperando por você.</h2>
+          <p>Atualize os dados abaixo com as informações reais do salão.</p>
+        </div>
+
+        <div class="contact-items">
+          <a href="tel:+5575999999999">
+            <span>Telefone / WhatsApp</span>
+            <strong>(75) 99999-9999</strong>
+          </a>
+          <div>
+            <span>Endereço</span>
+            <strong>Informe o endereço do salão</strong>
+          </div>
+          <div>
+            <span>Horário</span>
+            <strong>Terça a sábado • Com hora marcada</strong>
+          </div>
+          <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">
+            <span>Instagram</span>
+            <strong>@umnovotempo.salao</strong>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand brand-footer" href="#inicio">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 64 64">
+              <path d="M32 5c8 8 13 14 13 23 0 9-6 16-13 16s-13-7-13-16C19 19 24 13 32 5Z"/>
+              <path d="M16 28c-6 3-10 8-10 14 0 9 8 17 19 17 4 0 7-1 10-3"/>
+              <path d="M48 28c6 3 10 8 10 14 0 9-8 17-19 17-4 0-7-1-10-3"/>
+            </svg>
+          </span>
+          <span>
+            <strong>Um Novo Tempo</strong>
+            <small>Salão de Beleza</small>
+          </span>
+        </a>
+        <p>Beleza, cuidado e renovação em cada atendimento.</p>
+      </div>
+
+      <div>
+        <h3>Navegação</h3>
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#agendamento">Agendamento</a>
+        <a href="#contato">Contato</a>
+      </div>
+
+      <div>
+        <h3>Serviços</h3>
+        <a href="#servicos">Escova e corte</a>
+        <a href="#servicos">Tratamentos capilares</a>
+        <a href="#servicos">Relaxamento</a>
+        <a href="#servicos">Botox e gradativa</a>
+      </div>
+
+      <div>
+        <h3>Informações</h3>
+        <button class="link-button" type="button" data-modal="privacidade">Política de privacidade</button>
+        <button class="link-button" type="button" data-modal="termos">Termos de atendimento</button>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© <span id="current-year"></span> Um Novo Tempo. Todos os direitos reservados.</span>
+      <span>Site demonstrativo — personalize telefone, endereço, redes sociais e horários.</span>
+    </div>
+  </footer>
+
+  <a
+    class="whatsapp-float"
+    href="https://wa.me/5575999999999?text=Olá!%20Gostaria%20de%20agendar%20um%20horário%20no%20salão%20Um%20Novo%20Tempo."
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Falar com o salão pelo WhatsApp"
+  >
+    <svg viewBox="0 0 32 32" aria-hidden="true">
+      <path d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3Zm0 23.6c-2.2 0-4.3-.7-6-1.8l-.4-.3-3.9 1 1-3.8-.3-.4a10.6 10.6 0 1 1 9.6 5.3Zm5.8-7.9c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.7.1-1.9-.9-3.1-1.7-4.4-3.8-.3-.6.3-.5.9-1.7.1-.2.1-.4 0-.6-.1-.2-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.9 0 1.7 1.3 3.4 1.4 3.6.2.2 2.5 3.8 6 5.3 2.2.9 3 .9 4.1.8.7-.1 1.9-.8 2.1-1.5.3-.7.3-1.3.2-1.5-.1-.1-.3-.2-.6-.4Z"/>
+    </svg>
+  </a>
+
+  <div class="modal" id="modal-privacidade" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="titulo-privacidade">
+      <button class="modal-close" type="button" data-close-modal aria-label="Fechar">×</button>
+      <h2 id="titulo-privacidade">Política de privacidade</h2>
+      <p>
+        Os dados enviados pelo formulário são utilizados apenas para responder ao contato,
+        fornecer informações e organizar o agendamento solicitado.
+      </p>
+      <p>
+        O envio pelo WhatsApp ocorre somente após a ação do usuário. O salão deve manter
+        os dados pelo tempo necessário ao atendimento e evitar compartilhamento indevido.
+      </p>
+      <p>
+        Para solicitar correção ou exclusão de dados, entre em contato pelo canal oficial
+        informado neste site.
+      </p>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-termos" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="titulo-termos">
+      <button class="modal-close" type="button" data-close-modal aria-label="Fechar">×</button>
+      <h2 id="titulo-termos">Termos de atendimento</h2>
+      <p>
+        O envio do formulário representa uma solicitação de horário, não uma confirmação
+        automática. O agendamento é confirmado após retorno do salão.
+      </p>
+      <p>
+        Valores, duração e resultado dependem da avaliação profissional, das características
+        dos fios e do histórico químico informado pela cliente.
+      </p>
+      <p>
+        Procedimentos químicos podem exigir teste de mecha. O salão poderá recomendar outro
+        tratamento ou adiar o serviço quando houver risco à integridade dos fios.
+      </p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
